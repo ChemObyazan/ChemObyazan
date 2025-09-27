@@ -3,11 +3,6 @@
   <img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/header.svg" alt="ChemObyazan — Product Owner" />
 </p>
 
-<!-- Соцсети -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/socials.svg" alt="Social links" />
-</p>
-
 ---
 
 ### 👋 Привет!
