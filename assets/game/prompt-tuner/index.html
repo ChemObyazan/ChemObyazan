@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prompt Tuner — ChemObyazan</title>
+<style>
+  :root{ --red:#E31E24; --bg:#f7f7f7; --fg:#0b0b0b; --muted:#6b7280 }
+  html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.45 Inter,Segoe UI,Roboto,Arial,sans-serif }
+  .wrap{ max-width:960px; margin:0 auto; padding:24px }
+  header{ display:flex; align-items:center; gap:16px; margin-bottom:20px }
+  .dot{ width:12px; height:12px; border-radius:50%; background:var(--red) }
+  h1{ font-size:24px; margin:0 }
+  .card{ background:#fff; border-radius:16px; padding:16px; box-shadow:0 10px 30px rgba(0,0,0,.06) }
+  .row{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px }
+  button{ border:0; border-radius:12px; padding:12px 14px; background:var(--red); color:#fff; font-weight:700; cursor:pointer }
+  button.secondary{ background:#111; }
+  .meta{ display:flex; gap:10px; flex-wrap:wrap; color:var(--muted); font-size:13px }
+  .score{ margin-top:12px; font-weight:800 }
+  .next{ margin-top:12px; display:flex; gap:8px }
+  .pill{ background:#111; color:#fff; padding:4px 10px; border-radius:999px; font-size:12px }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="dot"></div>
+      <h1>Prompt Tuner</h1>
+      <span class="pill">A/B</span>
+    </header>
+
+    <div class="card" id="app"></div>
+  </div>
+
+<script>
+const rounds = [
+  {
+    task: 'Суммируй статью на 3 пункта без вводных слов.',
+    a: 'Суммируй текст кратко в три пункта',
+    b: 'Выдели три тезиса из текста; без вводных, без заключения; 1–2 строки каждый',
+    weights: { brevity: .4, structure: .4, banIntro: .2 }
+  },
+  {
+    task: 'Сравни два API по 5 критериям и сделай таблицу.',
+    a: 'Сравни API A и B',
+    b: 'Сформируй таблицу 5×3: критерий, API A, API B; выдели отличия; кратко',
+    weights: { table: .5, coverage: .3, clarity: .2 }
+  },
+  {
+    task: 'Сгенерируй 3 edge-case теста для сортировки.',
+    a: 'Сделай тесты для сортировки',
+    b: 'Сгенерируй 3 edge-cases: пустой ввод, дубликаты, большие числа; ожидаемый результат явно',
+    weights: { specificity: .5, completeness: .3, clarity: .2 }
+  }
+]
+
+let i = 0, score = 0
+const $ = sel => document.querySelector(sel)
+
+function evalPrompt(p, w){
+  // Грубая эвристика: оцениваем наличие ключевых паттернов
+  const s = p.toLowerCase()
+  let v = 0
+  if (w.brevity) v += w.brevity * (s.length < 120 ? 1 : 0)
+  if (w.structure) v += w.structure * (/(\d|\bпункт|тезис|таблица)/.test(s) ? 1 : 0)
+  if (w.banIntro) v += w.banIntro * (!/(введение|итог|заключ)/.test(s) ? 1 : 0)
+  if (w.table) v += w.table * (/таблиц|table|\b\d×\d/.test(s) ? 1 : 0)
+  if (w.coverage) v += w.coverage * (/5|пять/.test(s) ? 1 : 0)
+  if (w.clarity) v += w.clarity * (/кратк|корот/.test(s) ? 1 : 0)
+  if (w.specificity) v += w.specificity * (/edge|пуст|дублик|больш/.test(s) ? 1 : 0)
+  if (w.completeness) v += w.completeness * (/3|три/.test(s) ? 1 : 0)
+  return Math.round(v*100)
+}
+
+function render(){
+  const r = rounds[i % rounds.length]
+  const aScore = evalPrompt(r.a, r.weights)
+  const bScore = evalPrompt(r.b, r.weights)
+  $('#app').innerHTML = `
+    <div class="meta">Раунд ${i+1} · Задача: ${r.task}</div>
+    <div class="row">
+      <div>
+        <div class="meta">Промпт A</div>
+        <button class="secondary" id="pickA">${r.a}</button>
+      </div>
+      <div>
+        <div class="meta">Промпт B</div>
+        <button id="pickB">${r.b}</button>
+      </div>
+    </div>
+    <div class="next">
+      <button id="show">Показать оценку</button>
+      <button id="skip">Дальше</button>
+    </div>
+    <div class="score" id="score"></div>
+  `
+  $('#pickA').onclick = () => judge('A', aScore, bScore)
+  $('#pickB').onclick = () => judge('B', aScore, bScore)
+  $('#show').onclick = () => show(aScore, bScore)
+  $('#skip').onclick = next
+}
+
+function show(a,b){ $('#score').textContent = `A: ${a} · B: ${b}` }
+
+function judge(choice, a, b){
+  const win = (choice==='A' ? a : b) >= (choice==='A' ? b : a)
+  score += win ? 1 : 0
+  $('#score').textContent = `${win ? '✔ Правильно' : '✖ Мимо'} · Счёт: ${score}`
+}
+
+function next(){ i++; render() }
+render()
+</script>
+</body>
+</html>
