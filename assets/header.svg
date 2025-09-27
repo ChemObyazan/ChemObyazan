@@ -1,13 +1,12 @@
 <!-- Lightweight SMIL SVG banner for GitHub README (no JS/React) -->
 <svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">ChemObyazan — Product Owner</title>
-  <desc id="desc">Светлая версия баннера с SMIL-анимацией: печать 3 фраз крупным жирным шрифтом, курсор следует за текстом</desc>
+  <desc id="desc">Светлая версия баннера с SMIL-анимацией: печать 3 фраз крупным жирным шрифтом, курсор следует за текстом, fade-in заголовка</desc>
 
   <!-- ===== ПАРАМЕТРЫ =====
        typeDur: 1.3s   скорость набора
        holdDur: 1.9s   пауза на фразе
-       delDur: 0.4s    скорость удаления (ускорена)
-       step:   22px    ширина шага «символа»
+       delDur: 0.4s    скорость удаления
   -->
 
   <defs>
@@ -21,8 +20,6 @@
     </filter>
 
     <!-- Маски для дискретного «набора» по символам -->
-
-    <!-- Фраза 1: "Prompts & LLMs" (14 символов) -->
     <mask id="type-mask-1">
       <rect x="0" y="0" width="0" height="100%" fill="#fff">
         <animate id="type1" attributeName="width" begin="0.8s;del3.end+0.2s" dur="1.3s" calcMode="discrete"
@@ -31,8 +28,6 @@
           values="308;286;264;242;220;198;176;154;132;110;88;66;44;22;0" fill="freeze"/>
       </rect>
     </mask>
-
-    <!-- Фраза 2: "AI & Context engeenering" (24 символа) -->
     <mask id="type-mask-2">
       <rect x="0" y="0" width="0" height="100%" fill="#fff">
         <animate id="type2" attributeName="width" begin="del1.end+0.2s" dur="1.3s" calcMode="discrete"
@@ -41,8 +36,6 @@
           values="528;506;484;462;440;418;396;374;352;330;308;286;264;242;220;198;176;154;132;110;88;66;44;22;0" fill="freeze"/>
       </rect>
     </mask>
-
-    <!-- Фраза 3: "Automatization & Product managment" (35 символов) -->
     <mask id="type-mask-3">
       <rect x="0" y="0" width="0" height="100%" fill="#fff">
         <animate id="type3" attributeName="width" begin="del2.end+0.2s" dur="1.3s" calcMode="discrete"
@@ -56,9 +49,10 @@
   <!-- Фон -->
   <rect width="1200" height="360" fill="url(#gLight)"/>
 
-  <!-- Заголовок -->
+  <!-- Заголовок с fade-in -->
   <g filter="url(#shadowLight)">
-    <text x="80" y="150" fill="#E31E24" font-size="64" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.5">
+    <text x="80" y="150" fill="#E31E24" font-size="64" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.5" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" dur="1.2s" begin="0.2s" fill="freeze"/>
       ChemObyazan
     </text>
   </g>
@@ -75,7 +69,6 @@
       </text>
     </g>
   </g>
-
   <g transform="translate(80,0)">
     <g mask="url(#type-mask-2)">
       <text x="0" y="230" fill="#0B0B0B" font-size="36" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.3" opacity="0">
@@ -84,7 +77,6 @@
       </text>
     </g>
   </g>
-
   <g transform="translate(80,0)">
     <g mask="url(#type-mask-3)">
       <text x="0" y="230" fill="#0B0B0B" font-size="36" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.3" opacity="0">
@@ -100,19 +92,19 @@
     <set attributeName="opacity" to="1" begin="type1.begin" dur="1.3s" fill="freeze"/>
     <animate attributeName="x" begin="type1.begin" dur="1.3s" calcMode="discrete"
       values="80;102;124;146;168;190;212;234;256;278;300;322;344;366;388" fill="freeze"/>
-    <animate attributeName="opacity" begin="type1.begin" dur="1.3s" values="1;0;1;0;1" repeatCount="1"/>
+    <animate attributeName="opacity" begin="type1.begin" dur="3.2s" values="1;0;1;0;1;0;1" repeatCount="1"/>
 
     <!-- Фраза 2 -->
     <set attributeName="opacity" to="1" begin="type2.begin" dur="1.3s" fill="freeze"/>
     <animate attributeName="x" begin="type2.begin" dur="1.3s" calcMode="discrete"
       values="80;102;124;146;168;190;212;234;256;278;300;322;344;366;388;410;432;454;476;498;520;542;564;586;608" fill="freeze"/>
-    <animate attributeName="opacity" begin="type2.begin" dur="1.3s" values="1;0;1;0;1" repeatCount="1"/>
+    <animate attributeName="opacity" begin="type2.begin" dur="3.2s" values="1;0;1;0;1;0;1" repeatCount="1"/>
 
     <!-- Фраза 3 -->
     <set attributeName="opacity" to="1" begin="type3.begin" dur="1.3s" fill="freeze"/>
     <animate attributeName="x" begin="type3.begin" dur="1.3s" calcMode="discrete"
       values="80;102;124;146;168;190;212;234;256;278;300;322;344;366;388;410;432;454;476;498;520;542;564;586;608;630;652;674;696;718;740;762;784;806;828;850" fill="freeze"/>
-    <animate attributeName="opacity" begin="type3.begin" dur="1.3s" values="1;0;1;0;1" repeatCount="1"/>
+    <animate attributeName="opacity" begin="type3.begin" dur="3.2s" values="1;0;1;0;1;0;1" repeatCount="1"/>
   </rect>
 
   <!-- Нижний акцент (красная волна) -->
