@@ -18,19 +18,13 @@
 - ✍️ В X пишу короткие практики, в GitHub — длинные разборы и инструменты.
 
 ---
+### 🌐 Contacts
 
-### 🧰 Тулкит
-`Product analytics` · `A/B & CUPED` · `Feature flags` · `ETL/ELT` · `SQL/DBT` · `Amplitude/Mixpanel` · `UXResearch`
-
----
-
-### 📈 Полезные вещи
-- 📚 **Конспекты**: практические заметки по метрикам и growth (скоро).
-- 🧩 **Шаблоны**: PRD/BRD/One-pager/Experiment brief.
-- 🧠 **Плейбуки**: «Запуск фичи» · «Оптимизация онбординга» · «Скоринг приоритетов».
+[![X](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-x.svg)](https://x.com/ChemObyazan?s=09)
+[![LinkedIn](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-linkedin.svg)](https://www.linkedin.com/in/ruslan-beskorovayniy-9228a7384)
+[![Facebook](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-facebook.svg)](https://www.facebook.com/share/1GEt8oeTia/)
 
 ---
-
 ### ⚡ Немного цифр
 <p align="center">
   <a href="https://github-readme-stats.vercel.app/api?username=ChemObyazan&show_icons=true&hide_title=true&include_all_commits=true&count_private=true">
@@ -42,18 +36,4 @@
   </a>
 </p>
 
----
 
-### 🐍 Коммиты как «змейка»
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/output/assets/snake.svg" alt="Snake animation"/>
-</p>
-
----
-
-
-### 🌐 Contacts
-
-[![X](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-x.svg)](https://x.com/ChemObyazan?s=09)
-[![LinkedIn](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-linkedin.svg)](https://www.linkedin.com/in/ruslan-beskorovayniy-9228a7384)
-[![Facebook](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-facebook.svg)](https://www.facebook.com/share/1GEt8oeTia/)
