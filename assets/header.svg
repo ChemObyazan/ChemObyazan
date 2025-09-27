@@ -1,12 +1,18 @@
-<!-- /assets/header-light.svg -->
+<!-- Lightweight SMIL SVG banner for GitHub README (no JS/React) -->
 <svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">ChemObyazan — Product Owner</title>
-  <desc id="desc">Светлая версия баннера с красным акцентом и печатающимся подзаголовком</desc>
+  <desc id="desc">Светлая версия баннера с SMIL-анимацией: печать 3 фраз крупным жирным шрифтом, курсор следует за текстом</desc>
+
+  <!-- ===== ПАРАМЕТРЫ =====
+       typeDur: 1.3s   скорость набора
+       holdDur: 1.9s   пауза на фразе
+       delDur: 0.4s    скорость удаления (ускорена)
+       step:   22px    ширина шага «символа»
+  -->
 
   <defs>
-    <!-- Лёгкий светлый градиент -->
     <linearGradient id="gLight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="0%" stop-color="#FFFFFF"/>
       <stop offset="100%" stop-color="#F7F7F7"/>
     </linearGradient>
 
@@ -14,14 +20,40 @@
       <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
 
-    <!-- Маска для набора (та же ширина) -->
-    <mask id="type-mask-light">
-      <rect x="0" y="0" width="0" height="100" fill="#fff">
-        <animate attributeName="width" from="0" to="1000" dur="2.8s" fill="freeze" begin="0.8s"/>
+    <!-- Маски для дискретного «набора» по символам -->
+
+    <!-- Фраза 1: "Prompts & LLMs" (14 символов) -->
+    <mask id="type-mask-1">
+      <rect x="0" y="0" width="0" height="100%" fill="#fff">
+        <animate id="type1" attributeName="width" begin="0.8s;del3.end+0.2s" dur="1.3s" calcMode="discrete"
+          values="0;22;44;66;88;110;132;154;176;198;220;242;264;286;308" fill="freeze"/>
+        <animate id="del1" attributeName="width" begin="type1.end+1.9s" dur="0.4s" calcMode="discrete"
+          values="308;286;264;242;220;198;176;154;132;110;88;66;44;22;0" fill="freeze"/>
+      </rect>
+    </mask>
+
+    <!-- Фраза 2: "AI & Context engeenering" (24 символа) -->
+    <mask id="type-mask-2">
+      <rect x="0" y="0" width="0" height="100%" fill="#fff">
+        <animate id="type2" attributeName="width" begin="del1.end+0.2s" dur="1.3s" calcMode="discrete"
+          values="0;22;44;66;88;110;132;154;176;198;220;242;264;286;308;330;352;374;396;418;440;462;484;506;528" fill="freeze"/>
+        <animate id="del2" attributeName="width" begin="type2.end+1.9s" dur="0.4s" calcMode="discrete"
+          values="528;506;484;462;440;418;396;374;352;330;308;286;264;242;220;198;176;154;132;110;88;66;44;22;0" fill="freeze"/>
+      </rect>
+    </mask>
+
+    <!-- Фраза 3: "Automatization & Product managment" (35 символов) -->
+    <mask id="type-mask-3">
+      <rect x="0" y="0" width="0" height="100%" fill="#fff">
+        <animate id="type3" attributeName="width" begin="del2.end+0.2s" dur="1.3s" calcMode="discrete"
+          values="0;22;44;66;88;110;132;154;176;198;220;242;264;286;308;330;352;374;396;418;440;462;484;506;528;550;572;594;616;638;660;682;704;726;748;770" fill="freeze"/>
+        <animate id="del3" attributeName="width" begin="type3.end+1.9s" dur="0.4s" calcMode="discrete"
+          values="770;748;726;704;682;660;638;616;594;572;550;528;506;484;462;440;418;396;374;352;330;308;286;264;242;220;198;176;154;132;110;88;66;44;22;0" fill="freeze"/>
       </rect>
     </mask>
   </defs>
 
+  <!-- Фон -->
   <rect width="1200" height="360" fill="url(#gLight)"/>
 
   <!-- Заголовок -->
@@ -31,23 +63,62 @@
     </text>
   </g>
 
-  <!-- Подзаголовок -->
-  <g>
-    <rect x="80" y="190" width="1040" height="44" fill="transparent"/>
-    <g mask="url(#type-mask-light)">
-      <text x="80" y="220" fill="#0B0B0B" font-size="28" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" letter-spacing="0.2">
-        Product Owner @ Московская биржа · Биржевые продукты · Метрики · Growth
+  <!-- Область под подзаголовок -->
+  <rect x="80" y="190" width="1040" height="60" fill="transparent"/>
+
+  <!-- Фразы -->
+  <g transform="translate(80,0)">
+    <g mask="url(#type-mask-1)">
+      <text x="0" y="230" fill="#0B0B0B" font-size="36" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.3" opacity="0">
+        <set attributeName="opacity" to="1" begin="type1.begin" dur="3.6s" fill="freeze"/>
+        Prompts &amp; LLMs
       </text>
     </g>
-    <rect x="1085" y="192" width="2" height="36" fill="#E31E24">
-      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="0.8s"/>
-    </rect>
   </g>
+
+  <g transform="translate(80,0)">
+    <g mask="url(#type-mask-2)">
+      <text x="0" y="230" fill="#0B0B0B" font-size="36" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.3" opacity="0">
+        <set attributeName="opacity" to="1" begin="type2.begin" dur="3.6s" fill="freeze"/>
+        AI &amp; Context engeenering
+      </text>
+    </g>
+  </g>
+
+  <g transform="translate(80,0)">
+    <g mask="url(#type-mask-3)">
+      <text x="0" y="230" fill="#0B0B0B" font-size="36" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.3" opacity="0">
+        <set attributeName="opacity" to="1" begin="type3.begin" dur="3.6s" fill="freeze"/>
+        Automatization &amp; Product managment
+      </text>
+    </g>
+  </g>
+
+  <!-- Курсор -->
+  <rect id="caret" x="80" y="198" width="3" height="40" fill="#E31E24" opacity="0">
+    <!-- Фраза 1 -->
+    <set attributeName="opacity" to="1" begin="type1.begin" dur="1.3s" fill="freeze"/>
+    <animate attributeName="x" begin="type1.begin" dur="1.3s" calcMode="discrete"
+      values="80;102;124;146;168;190;212;234;256;278;300;322;344;366;388" fill="freeze"/>
+    <animate attributeName="opacity" begin="type1.begin" dur="1.3s" values="1;0;1;0;1" repeatCount="1"/>
+
+    <!-- Фраза 2 -->
+    <set attributeName="opacity" to="1" begin="type2.begin" dur="1.3s" fill="freeze"/>
+    <animate attributeName="x" begin="type2.begin" dur="1.3s" calcMode="discrete"
+      values="80;102;124;146;168;190;212;234;256;278;300;322;344;366;388;410;432;454;476;498;520;542;564;586;608" fill="freeze"/>
+    <animate attributeName="opacity" begin="type2.begin" dur="1.3s" values="1;0;1;0;1" repeatCount="1"/>
+
+    <!-- Фраза 3 -->
+    <set attributeName="opacity" to="1" begin="type3.begin" dur="1.3s" fill="freeze"/>
+    <animate attributeName="x" begin="type3.begin" dur="1.3s" calcMode="discrete"
+      values="80;102;124;146;168;190;212;234;256;278;300;322;344;366;388;410;432;454;476;498;520;542;564;586;608;630;652;674;696;718;740;762;784;806;828;850" fill="freeze"/>
+    <animate attributeName="opacity" begin="type3.begin" dur="1.3s" values="1;0;1;0;1" repeatCount="1"/>
+  </rect>
 
   <!-- Нижний акцент (красная волна) -->
   <g opacity="0.9">
     <path fill="#E31E24">
-      <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      <animate attributeName="d" dur="10s" repeatCount="indefinite"
         values="
         M0,300 C300,340 900,260 1200,300 L1200,360 L0,360 Z;
         M0,305 C300,260 900,340 1200,305 L1200,360 L0,360 Z;
