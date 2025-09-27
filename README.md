@@ -14,6 +14,7 @@ My interests in research and activities:
 - Entrepreneurship and Financial markets
 
 In X (twitter) I share observations and best practices, in GitHub — long analyzes and tools.
+
 ---
 ### 🌐 Contacts
 [![X](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-x.svg)](https://x.com/ChemObyazan?s=09)
@@ -22,9 +23,10 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 
 ---
 ### 🎮 MiniGames
-- [Prompt Tuner](./game/prompt-tuner/)
-- [Context Engineer](./game/context-engineer/)
-- [Automation Tycoon](./game/automation-tycoon/)
+- [Prompt Tuner](https://chemobyazan.github.io/game/prompt-tuner/)
+- [Context Engineer](https://chemobyazan.github.io/game/context-engineer/)
+- [Automation Tycoon](https://chemobyazan.github.io/game/automation-tycoon/)
+
 ---
 ### ⚡ Some numbers
 <p align="center">
