@@ -3,12 +3,8 @@
   <title id="title">ChemObyazan — Product Owner</title>
   <desc id="desc">Светлая версия баннера с SMIL-анимацией: печать 3 фраз, пульсирующий портрет, курсор следует за текстом</desc>
 
-  <!-- ===== ПАРАМЕТРЫ =====
-       typeDur: 1.3s   скорость набора
-       holdDur: 1.9s   пауза на фразе
-       delDur: 0.4s    скорость удаления
-       waveDur: 10s    цикл волны/пульса портрета
-  -->
+  <!-- ===== ПАРАМЕТРЫ ===== -->
+  <!-- typeDur: 1.3s, holdDur: 1.9s, delDur: 0.4s, waveDur: 10s -->
 
   <defs>
     <linearGradient id="gLight" x1="0" y1="0" x2="1" y2="1">
@@ -20,17 +16,15 @@
       <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
 
-    <!-- мягкое светло-красное свечение для пульса вокруг аватарки -->
     <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="12"/>
     </filter>
 
-    <!-- Клип по кругу для аватарки -->
     <clipPath id="avatarClip">
       <circle cx="0" cy="0" r="96"/>
     </clipPath>
 
-    <!-- Маски для дискретного «набора» по символам -->
+    <!-- Маски дискретного набора -->
     <mask id="type-mask-1">
       <rect x="0" y="0" width="0" height="100%" fill="#fff">
         <animate id="type1" attributeName="width" begin="0.8s;del3.end+0.2s" dur="1.3s" calcMode="discrete"
@@ -60,7 +54,7 @@
   <!-- Фон -->
   <rect width="1200" height="360" fill="url(#gLight)"/>
 
-  <!-- Заголовок с fade-in -->
+  <!-- Заголовок -->
   <g filter="url(#shadowLight)">
     <text x="80" y="150" fill="#E31E24" font-size="64" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.5" opacity="0">
       <animate attributeName="opacity" from="0" to="1" dur="1.2s" begin="0.2s" fill="freeze"/>
@@ -68,49 +62,39 @@
     </text>
   </g>
 
-  <!-- Область под подзаголовок -->
+  <!-- Подзаголовки -->
   <rect x="80" y="190" width="1040" height="60" fill="transparent"/>
-
-  <!-- Фразы -->
   <g transform="translate(80,0)">
     <g mask="url(#type-mask-1)">
       <text x="0" y="230" fill="#0B0B0B" font-size="36" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.3" opacity="0">
-        <set attributeName="opacity" to="1" begin="type1.begin" dur="3.6s" fill="freeze"/>
-        Prompts &amp; LLMs
+        <set attributeName="opacity" to="1" begin="type1.begin" dur="3.6s" fill="freeze"/>Prompts &amp; LLMs
       </text>
     </g>
   </g>
   <g transform="translate(80,0)">
     <g mask="url(#type-mask-2)">
       <text x="0" y="230" fill="#0B0B0B" font-size="36" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.3" opacity="0">
-        <set attributeName="opacity" to="1" begin="type2.begin" dur="3.6s" fill="freeze"/>
-        AI &amp; Context engeenering
+        <set attributeName="opacity" to="1" begin="type2.begin" dur="3.6s" fill="freeze"/>AI &amp; Context engeenering
       </text>
     </g>
   </g>
   <g transform="translate(80,0)">
     <g mask="url(#type-mask-3)">
       <text x="0" y="230" fill="#0B0B0B" font-size="36" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="800" letter-spacing="0.3" opacity="0">
-        <set attributeName="opacity" to="1" begin="type3.begin" dur="3.6s" fill="freeze"/>
-        Automatization &amp; Product managment
+        <set attributeName="opacity" to="1" begin="type3.begin" dur="3.6s" fill="freeze"/>Automatization &amp; Product managment
       </text>
     </g>
   </g>
 
-  <!-- Курсор: следует за последним символом -->
+  <!-- Каретка -->
   <rect id="caret" x="80" y="198" width="3" height="40" fill="#E31E24" opacity="0">
-    <!-- Фраза 1 -->
     <set attributeName="opacity" to="1" begin="type1.begin" dur="1.3s" fill="freeze"/>
-    <!-- набор -->
     <animate attributeName="x" begin="type1.begin" dur="1.3s" calcMode="discrete"
       values="80;102;124;146;168;190;212;234;256;278;300;322;344;366;388" fill="freeze"/>
-    <!-- пауза: держим у хвоста -->
     <set attributeName="x" to="388" begin="type1.end" dur="1.9s" fill="freeze"/>
-    <!-- удаление -->
     <animate attributeName="x" begin="del1.begin" dur="0.4s" calcMode="discrete"
       values="388;366;344;322;300;278;256;234;212;190;168;146;124;102;80" fill="freeze"/>
 
-    <!-- Фраза 2 -->
     <set attributeName="opacity" to="1" begin="type2.begin" dur="1.3s" fill="freeze"/>
     <animate attributeName="x" begin="type2.begin" dur="1.3s" calcMode="discrete"
       values="80;102;124;146;168;190;212;234;256;278;300;322;344;366;388;410;432;454;476;498;520;542;564;586;608" fill="freeze"/>
@@ -118,41 +102,35 @@
     <animate attributeName="x" begin="del2.begin" dur="0.4s" calcMode="discrete"
       values="608;586;564;542;520;498;476;454;432;410;388;366;344;322;300;278;256;234;212;190;168;146;124;102;80" fill="freeze"/>
 
-    <!-- Фраза 3 -->
     <set attributeName="opacity" to="1" begin="type3.begin" dur="1.3s" fill="freeze"/>
     <animate attributeName="x" begin="type3.begin" dur="1.3s" calcMode="discrete"
       values="80;102;124;146;168;190;212;234;256;278;300;322;344;366;388;410;432;454;476;498;520;542;564;586;608;630;652;674;696;718;740;762;784;806;828;850" fill="freeze"/>
     <set attributeName="x" to="850" begin="type3.end" dur="1.9s" fill="freeze"/>
     <animate attributeName="x" begin="del3.begin" dur="0.4s" calcMode="discrete"
       values="850;828;806;784;762;740;718;696;674;652;630;608;586;564;542;520;498;476;454;432;410;388;366;344;322;300;278;256;234;212;190;168;146;124;102;80" fill="freeze"/>
-    <!-- мягкое мигание всей каретки -->
     <animate attributeName="opacity" begin="type1.begin" dur="12.8s" values="1;0;1;0;1;0;1;0;1" repeatCount="1"/>
   </rect>
 
-  <!-- Портрет (центр по вертикали y=180). ЗАМЕНИТЕ href на вашу ссылку -->
-  <g id="portrait" transform="translate(1000,180)">
-    <!-- светло-красная пульсация под аватаркой, синхронно с волной -->
+  <!-- Портрет (поднят выше: y=140). ЗАМЕНИТЕ href на вашу ссылку -->
+  <g id="portrait" transform="translate(1000,140)">
     <circle r="98" fill="#E31E24" opacity="0.18" filter="url(#softGlow)">
       <animate attributeName="r" values="98;112;98" dur="10s" begin="wave.begin" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.12;0.26;0.12" dur="10s" begin="wave.begin" repeatCount="indefinite"/>
     </circle>
 
-    <!-- аватарка (по центру), обрезана по кругу -->
     <g clip-path="url(#avatarClip)">
       <image href="https://example.com/avatar.jpg"
              x="-96" y="-96" width="192" height="192" preserveAspectRatio="xMidYMid slice"/>
     </g>
 
-    <!-- круг-рамка с лёгкой пульсацией толщины -->
     <circle r="96" fill="none" stroke="#E31E24" stroke-width="6">
       <animate attributeName="stroke-width" values="6;9;6" dur="10s" begin="wave.begin" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- Нижний акцент (красная волна) -->
+  <!-- Нижняя волна -->
   <g opacity="0.9">
     <path fill="#E31E24">
-      <!-- Присвоили id=wave — на него ссылается пульсация портрета -->
       <animate id="wave" attributeName="d" dur="10s" repeatCount="indefinite"
         values="
         M0,300 C300,340 900,260 1200,300 L1200,360 L0,360 Z;
