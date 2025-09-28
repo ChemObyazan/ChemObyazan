@@ -105,8 +105,8 @@
       <animate attributeName="opacity" values="0.12;0.26;0.12" dur="10s" begin="wave.begin" repeatCount="indefinite"/>
     </circle>
     <g clip-path="url(#avatarClip)">
-      <image href="https://example.com/avatar.jpg"
-             x="-96" y="-96" width="192" height="192" preserveAspectRatio="xMidYMid slice"/>
+      <image href="./assets/avatar.png"
+        x="-96" y="-96" width="192" height="192" preserveAspectRatio="xMidYMid slice"/>
     </g>
     <circle r="96" fill="none" stroke="#E31E24" stroke-width="6">
       <animate attributeName="stroke-width" values="6;9;6" dur="10s" begin="wave.begin" repeatCount="indefinite"/>
