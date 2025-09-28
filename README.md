@@ -35,6 +35,11 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
          alt="Gmail" style="width:20%; height:auto;">
   </a>
 </div>
+---
+
+### Skills
+![Навыки](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/skills-bars.svg)
+
 
 ---
 ### ⚡ Some numbers
