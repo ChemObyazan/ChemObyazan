@@ -21,11 +21,6 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 [![LinkedIn](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-linkedin.svg)](https://www.linkedin.com/in/ruslan-beskorovayniy-9228a7384)
 [![Facebook](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-facebook.svg)](https://www.facebook.com/share/1GEt8oeTia/)
 
----
-### 🎮 MiniGames
-- [prompt Tuner](https://chemobyazan.github.io/ChemObyazan/game/prompt-tuner/)
-- [context Engineer](https://chemobyazan.github.io/ChemObyazan/game/context-engineer/)
-- [automation Tycoon](https://chemobyazan.github.io/ChemObyazan/game/automation-tycoon/)
 
 ---
 ### ⚡ Some numbers
