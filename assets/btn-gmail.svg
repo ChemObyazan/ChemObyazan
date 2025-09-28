@@ -11,7 +11,7 @@
     <path d="M2 3 L12 10 L22 3" fill="none" stroke="#EA4335" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 
-  <!-- Текст -->
-  <text x="116" y="30" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif"
+  <!-- Текст: поднят для центровки -->
+  <text x="116" y="28" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif"
         font-weight="600" font-size="16" fill="#FFFFFF">Gmail</text>
 </svg>
