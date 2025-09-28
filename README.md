@@ -4,18 +4,6 @@
 </p>
 
 ---
-### 👋 Hello!
-Hi, my name is Ruslan. I'm an ordinary guy who enjoys AI engineering and LLM. I currently live in Moscow, but I dream of moving to California, USA, traveling with my family, kitesurfing, launching startups with YCombinator and working for the NYSE. I'm a bit of a perfectionist, but I try not to go to extremes)
-
-My interests in research and activities:
-- LLMs and Prompting
-- AI and Context engineering
-- Automatization and Product Management
-- Entrepreneurship and Financial markets
-
-In X (twitter) I share observations and best practices, in GitHub — long analyzes and tools.
-
----
 ### 🌐 Contacts
 <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;">
   <a href="https://x.com/ChemObyazan?s=09" style="flex:1 1 25%; min-width:200px;">
@@ -35,11 +23,23 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
          alt="Gmail" style="width:20%; height:auto;">
   </a>
 </div>
----
 
+---
+### 👋 Hello!
+Hi, my name is Ruslan. I'm an ordinary guy who enjoys AI engineering and LLM. I currently live in Moscow, but I dream of moving to California, USA, traveling with my family, kitesurfing, launching startups with YCombinator and working for the NYSE. I'm a bit of a perfectionist, but I try not to go to extremes)
+
+My interests in research and activities:
+- LLMs and Prompting
+- AI and Context engineering
+- Automatization and Product Management
+- Entrepreneurship and Financial markets
+
+In X (twitter) I share observations and best practices, in GitHub — long analyzes and tools.
+
+---
 ### Skills
 ![Навыки](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/skills-bars.svg)
-
+<img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/flip-card.svg" width="260" alt="Flip-card">
 
 ---
 ### ⚡ Some numbers
