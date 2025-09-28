@@ -23,9 +23,9 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 
 ---
 ### 🎮 MiniGames
-- [Prompt Tuner](https://chemobyazan.github.io/ChemObyazan/game/prompt-tuner/)
-- [Context Engineer](https://chemobyazan.github.io/ChemObyazan/game/context-engineer/)
-- [Automation Tycoon](https://chemobyazan.github.io/ChemObyazan/game/automation-tycoon/)
+- [prompt Tuner](https://chemobyazan.github.io/ChemObyazan/game/prompt-tuner/)
+- [context Engineer](https://chemobyazan.github.io/ChemObyazan/game/context-engineer/)
+- [automation Tycoon](https://chemobyazan.github.io/ChemObyazan/game/automation-tycoon/)
 
 ---
 ### ⚡ Some numbers
