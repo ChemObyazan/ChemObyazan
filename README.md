@@ -17,11 +17,24 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 
 ---
 ### 🌐 Contacts
-[![X](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-x.svg)](https://x.com/ChemObyazan?s=09)
-[![LinkedIn](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-linkedin.svg)](https://www.linkedin.com/in/ruslan-beskorovayniy-9228a7384)
-[![Facebook](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-facebook.svg)](https://www.facebook.com/share/1GEt8oeTia/)
-[![Gmail](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-gmail.svg)](mailto:ruslanbeskor@gmail.com)
-
+<div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+  <a href="https://x.com/ChemObyazan?s=09" style="flex:1 1 25%; min-width:200px;">
+    <img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-x.svg"
+         alt="X (Twitter)" style="width:20%; height:auto;">
+  </a>
+  <a href="https://www.linkedin.com/in/ruslan-beskorovayniy-9228a7384" style="flex:1 1 25%; min-width:200px;">
+    <img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-linkedin.svg"
+         alt="LinkedIn" style="width:20%; height:auto;">
+  </a>
+  <a href="https://www.facebook.com/share/1GEt8oeTia/" style="flex:1 1 25%; min-width:200px;">
+    <img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-facebook.svg"
+         alt="Facebook" style="width:20%; height:auto;">
+  </a>
+  <a href="mailto:your.name@gmail.com" style="flex:1 1 25%; min-width:200px;">
+    <img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-gmail.svg"
+         alt="Gmail" style="width:20%; height:auto;">
+  </a>
+</div>
 
 ---
 ### ⚡ Some numbers
