@@ -20,6 +20,7 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 [![X](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-x.svg)](https://x.com/ChemObyazan?s=09)
 [![LinkedIn](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-linkedin.svg)](https://www.linkedin.com/in/ruslan-beskorovayniy-9228a7384)
 [![Facebook](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-facebook.svg)](https://www.facebook.com/share/1GEt8oeTia/)
+[![Gmail](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-gmail.svg)](mailto:ruslanbeskor@gmail.com)
 
 
 ---
