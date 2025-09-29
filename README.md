@@ -38,7 +38,6 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 
 
 ---
-### Skills
 ![Навыки](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/skills-bars.svg)
 
 
