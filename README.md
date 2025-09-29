@@ -54,16 +54,12 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 </p>
 
 ---
-<p align="center">
-  <img src="./assets/github-star-extended.svg" height="300" width="45%" style="display:inline-block;"/>
-  <img src="./assets/handshake-shake-blend-strong.svg" height="200" width="45%" style="display:inline-block;"/>
+<p align="left">
+  <img src="./assets/github-star-extended.svg" height="350" width="150%" style="display:inline-block;"/>
 </p>
 
-<br>
-<br>
-
 <p align="center">
-  <b>If you liked my repository, please give me a star!</b> <br/><br/>
+  <b>If you liked my repository, please give me a star!</b><br/>
   <sub>I'm not a professional developer — I use LLMs and vibe-coding.<br/>
   Your support helps me grow and feel satisfaction from the work done.</sub>
 </p>
@@ -74,4 +70,6 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
   </a>
 </p>
 
-
+<p align="center">
+  <img src="./assets/handshake-shake-blend-strong.svg" height="200" width="45%" style="display:inline-block;"/>
+</p>
