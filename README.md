@@ -57,7 +57,7 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 ---
 <p align="center">
   <img src="./assets/github-star-extended.svg" height="300" width="45%" style="display:inline-block;"/>
-  <img src="./assets/handshake-shake-blend-strong.svg" height="300" width="45%" style="display:inline-block;"/>
+  <img src="./assets/handshake-shake-blend-strong.svg" height="200" width="45%" style="display:inline-block;"/>
 </p>
 
 <br>
