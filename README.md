@@ -55,12 +55,10 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 </p>
 
 ---
-<p align="left">
-  <img src="./assets/handshake-shake-blend-strong.svg" alt="Handshake animation" width="49%"/>
-  &nbsp;&nbsp;&nbsp;
-  <img src="./assets/github-star-extended.svg" alt="GitHub Star animation" width="49%"/>
+<p align="center">
+  <img src="./assets/github-star-extended.svg" height="300" width="45%" style="display:inline-block;"/>
+  <img src="./assets/handshake-shake-blend-strong.svg" height="300" width="45%" style="display:inline-block;"/>
 </p>
-
 
 <br>
 <br>
