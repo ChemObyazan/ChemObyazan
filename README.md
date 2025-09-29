@@ -44,7 +44,7 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 ---
 ### ⚡ Some numbers
 
-<p align="center">
+<p align="left">
   <a href="https://github-readme-stats.vercel.app/api?username=ChemObyazan&show_icons=true&hide_title=true&include_all_commits=true&count_private=true&title_color=000000&text_color=333333&icon_color=E63946&bg_color=ffffff&border_color=DDDDDD">
     <img src="https://github-readme-stats.vercel.app/api?username=ChemObyazan&show_icons=true&hide_title=true&include_all_commits=true&count_private=true&title_color=000000&text_color=333333&icon_color=E63946&bg_color=ffffff&border_color=DDDDDD" height="150" alt="Stats"/>
   </a>
@@ -53,19 +53,16 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
   </a>
 </p>
 
-<p align="center">
+<p align="left">
   <a href="https://github-profile-trophy.vercel.app/?username=ChemObyazan&no-bg=true&no-frame=true&margin-w=8&margin-h=8&column=-1">
     <img src="https://github-profile-trophy.vercel.app/?username=ChemObyazan&no-bg=true&no-frame=true&margin-w=8&margin-h=8&column=-1" alt="Trophies"/>
   </a>
 </p>
 
 
-
-
-
 ---
 <p align="left">
-  <img src="./assets/github-star-extended.svg" height="350" width="150%" style="display:inline-block;"/>
+  <img src="./assets/github-star-extended.svg" height="250" width="100%" style="display:inline-block;"/>
 </p>
 
 <p align="center">
