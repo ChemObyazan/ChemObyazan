@@ -56,11 +56,14 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 
 ---
 <p align="left">
-  <img src="./assets/handshake-shake-blend-strong.svg" alt="Handshake animation" width="50%"/>
+  <img src="./assets/handshake-shake-blend-strong.svg" alt="Handshake animation" width="49%"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="./assets/github-star-extended.svg" alt="GitHub Star animation" width="50%"/>
+  <img src="./assets/github-star-extended.svg" alt="GitHub Star animation" width="49%"/>
 </p>
 
+
+<br>
+<br>
 <p align="center">
   <b>Please give me a ⭐ if you liked my repository.<br/>
   I'm not a professional developer and I use LLM and vibe-coding. This will help me develop and feel satisfaction from the work done</b>
