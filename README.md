@@ -65,11 +65,13 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
   <img src="./assets/github-star-extended.svg" height="250" width="100%" style="display:inline-block;"/>
 </p>
 
+<p align="center"><b>If you liked my repository, please give me a star!</b></p>
 <p align="center">
-  <b>If you liked my repository, please give me a star!</b><br/>
-  <sub>I'm not a professional developer — I use LLMs and vibe-coding.<br/>
-  Your support helps me grow and feel satisfaction from the work done.</sub>
+  <small>I'm not a professional developer — I use LLMs and vibe-coding.<br/>
+  Your support helps me grow and feel satisfaction from the work done.</small>
 </p>
+
+
 
 <p align="center">
   <a href="https://github.com/ChemObyazan/ChemObyazan/">
@@ -78,5 +80,5 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 </p>
 
 <p align="center">
-  <img src="./assets/handshake-shake-blend-strong.svg" height="200" width="45%" style="display:inline-block;"/>
+  <img src="./assets/handshake-shake-blend-strong.svg" height="150" width="45%" style="display:inline-block;"/>
 </p>
