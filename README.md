@@ -36,6 +36,7 @@ My interests in research and activities:
 
 In X (twitter) I share observations and best practices, in GitHub — long analyzes and tools.
 
+
 ---
 ### Skills
 ![Навыки](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/skills-bars.svg)
@@ -43,7 +44,7 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 
 ---
 ### ⚡ Some numbers
-<p align="center">
+<p align="left">
   <a href="https://github-readme-stats.vercel.app/api?username=ChemObyazan&show_icons=true&hide_title=true&include_all_commits=true&count_private=true">
     <img src="https://github-readme-stats.vercel.app/api?username=ChemObyazan&show_icons=true&hide_title=true&include_all_commits=true&count_private=true" alt="Stats" />
   </a>
@@ -53,6 +54,14 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
   </a>
 </p>
 
-<<p align="center">
-  <img src="./assets/handshake-shake-blend-strong.svg" alt="Handshake animation"/>
+---
+<p align="left">
+  <img src="./assets/handshake-shake-blend-strong.svg" alt="Handshake animation" width="50%"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="./assets/github-star-extended.svg" alt="GitHub Star animation" width="50%"/>
+</p>
+
+<p align="center">
+  <b>Please give me a ⭐ if you liked my repository.<br/>
+  I'm not a professional developer and I use LLM and vibe-coding. This will help me develop and feel satisfaction from the work done</b>
 </p>
