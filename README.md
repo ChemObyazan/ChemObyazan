@@ -61,7 +61,17 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 
 <br>
 <br>
+
 <p align="center">
-  <b>Please give me a ⭐ if you liked my repository.<br/>
-  I'm not a professional developer and I use LLM and vibe-coding. This will help me develop and feel satisfaction from the work done</b>
+  <b>If you liked my repository, please give me a star!</b> <br/><br/>
+  <sub>I'm not a professional developer — I use LLMs and vibe-coding.<br/>
+  Your support helps me grow and feel satisfaction from the work done.</sub>
 </p>
+
+<p align="center">
+  <a href="https://github.com/ChemObyazan/ChemObyazan/">
+    <img src="https://img.shields.io/badge/⭐%20Give%20a%20star-e63946?style=flat-square&logo=github&logoColor=white" alt="Give me a star"/>
+  </a>
+</p>
+
+
