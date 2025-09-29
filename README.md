@@ -39,7 +39,7 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
 ---
 ### Skills
 ![Навыки](https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/skills-bars.svg)
-<img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/flip-card.svg" width="260" alt="Flip-card">
+
 
 ---
 ### ⚡ Some numbers
@@ -53,3 +53,6 @@ In X (twitter) I share observations and best practices, in GitHub — long analy
   </a>
 </p>
 
+<<p align="center">
+  <img src="./assets/handshake-shake-blend-strong.svg" alt="Handshake animation"/>
+</p>
