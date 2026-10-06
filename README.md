@@ -26,7 +26,7 @@
 
 ---
 ### 👋 Hello!
-Hi, my name is Ruslan. I'm an ordinary guy who enjoys AI engineering and LLM. I currently live in Moscow, but I dream of moving to California, USA, traveling with my family, kitesurfing, launching startups with YCombinator and working for the NYSE. I'm a bit of a perfectionist, but I try not to go to extremes)
+Hi, my name is Ruslan. I'm an ordinary guy who enjoys AI engineering and LLM. I currently live in Moscow, but I dream of moving to California, USA, traveling with my family, kitesurfing, launching startups with YCombinator. I'm a bit of a perfectionist, but I try not to go to extremes)
 
 My interests in research and activities:
 - LLMs and Prompting
