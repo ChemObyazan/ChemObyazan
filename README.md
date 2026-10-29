@@ -18,7 +18,7 @@
     <img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-facebook.svg"
          alt="Facebook" style="width:24%; height:auto;">
   </a>
-  <a href="mailto:your.name@gmail.com" style="flex:1 1 24%; min-width:200px;">
+  <a href="mailto:ruslanbeskor@gmail.com" style="flex:1 1 24%; min-width:200px;">
     <img src="https://raw.githubusercontent.com/ChemObyazan/ChemObyazan/main/assets/btn-gmail.svg"
          alt="Gmail" style="width:24%; height:auto;">
   </a>
